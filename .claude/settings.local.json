@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.showstate.co.uk)",
+      "Bash(ls /c/Users/shark/Desktop/Homepage/logo*)",
+      "Bash(vercel --version)"
+    ]
+  }
+}

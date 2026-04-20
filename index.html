@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BM MEDIA</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Bebas+Neue&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <div id="top-bar">
+    <div class="container top-bar-inner">
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <a href="tel:+821022501664">+82 10 2250 1664</a>
+      </span>
+      <span>
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <a href="mailto:b-media@b-media.co.kr">b-media@b-media.co.kr</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="container header-inner">
+      <a href="#" class="logo-text-link">BM MEDIA</a>
+      <nav class="nav" id="nav">
+        <a href="#services" data-en="Services" data-ko="서비스">Services</a>
+        <a href="#about" data-en="About" data-ko="소개">About</a>
+        <a href="#contact" data-en="Contact" data-ko="문의">Contact</a>
+      </nav>
+      <div class="header-right">
+        <div class="lang-dropdown" id="langDropdown">
+          <button class="lang-toggle" id="langToggle">Language</button>
+          <ul class="lang-menu" id="langMenu">
+            <li data-lang="en">English</li>
+            <li data-lang="ko">한국어</li>
+          </ul>
+        </div>
+        <a href="#contact" class="btn-header-cta" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
+        <button class="menu-btn" id="menuBtn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="slides">
+      <div class="slide active">
+        <div class="slide-content">
+          <p class="slide-sub" data-en="International Conference Specialists" data-ko="국제 회의 전문 기업">International Conference Specialists</p>
+          <h1 data-en="Bringing Every Event<br>to Life" data-ko="모든 행사를<br>완벽하게">Bringing Every Event<br>to Life</h1>
+          <a href="#services" class="btn" data-en="Our Services" data-ko="서비스 보기">Our Services</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-content">
+          <p class="slide-sub" data-en="Professional AV Solutions" data-ko="전문 AV 솔루션">Professional AV Solutions</p>
+          <h1 data-en="Video · Audio · Lighting<br>Redefined" data-ko="영상 · 음향 · 조명<br>새로운 기준">Video · Audio · Lighting<br>Redefined</h1>
+          <a href="#contact" class="btn" data-en="Get in Touch" data-ko="문의하기">Get in Touch</a>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="slide-content">
+          <p class="slide-sub" data-en="AI-Powered Interpretation" data-ko="AI 통역 서비스">AI-Powered Interpretation</p>
+          <h1 data-en="Breaking Language<br>Barriers" data-ko="언어의 장벽을<br>넘다">Breaking Language<br>Barriers</h1>
+          <a href="#contact" class="btn" data-en="Learn More" data-ko="자세히 보기">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="slide-controls">
+      <button class="prev" id="prevBtn">&#8592;</button>
+      <div class="dots" id="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="next" id="nextBtn">&#8594;</button>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-en="What We Do" data-ko="주요 서비스">What We Do</p>
+        <h2 data-en="Our Services" data-ko="서비스 소개">Our Services</h2>
+      </div>
+      <div class="services-grid fade-in">
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="4" y="10" width="32" height="22" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M36 18l8-5v22l-8-5" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+              <line x1="4" y1="38" x2="44" y2="38" stroke="currentColor" stroke-width="2.5"/>
+            </svg>
+          </div>
+          <h3 data-en="Video Production" data-ko="영상 제작">Video Production</h3>
+          <p data-en="High-definition video systems and production services for conferences and live events of any scale." data-ko="모든 규모의 회의 및 라이브 행사를 위한 고화질 영상 시스템과 제작 서비스를 제공합니다.">High-definition video systems and production services for conferences and live events of any scale.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M14 20c0 5.523 4.477 10 10 10s10-4.477 10-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="24" y1="30" x2="24" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="16" y1="38" x2="32" y2="38" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-en="Audio Systems" data-ko="음향 시스템">Audio Systems</h3>
+          <p data-en="Crystal-clear sound engineering and audio equipment for flawless conference experiences." data-ko="완벽한 회의 경험을 위한 명료한 음향 엔지니어링과 오디오 장비를 제공합니다.">Crystal-clear sound engineering and audio equipment for flawless conference experiences.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="12" r="5" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M24 17v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M14 36c0-5.523 4.477-8 10-8s10 2.477 10 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M8 28l4-4M40 28l-4-4M8 20h4M36 20h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 data-en="Lighting Design" data-ko="조명 디자인">Lighting Design</h3>
+          <p data-en="Professional lighting solutions that set the perfect atmosphere and enhance every moment of your event." data-ko="행사의 모든 순간을 빛내는 완벽한 분위기의 전문 조명 솔루션입니다.">Professional lighting solutions that set the perfect atmosphere and enhance every moment of your event.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="8" width="36" height="24" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <circle cx="38" cy="10" r="4" fill="#e53e3e" stroke="white" stroke-width="1.5"/>
+              <path d="M14 20h12M14 26h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M18 38l6-6 6 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3 data-en="Live Streaming" data-ko="라이브 스트리밍">Live Streaming</h3>
+          <p data-en="Seamless live streaming solutions to broadcast your events to global audiences in real time." data-ko="전 세계 어디서나 실시간으로 행사를 생중계하는 완벽한 라이브 스트리밍 솔루션입니다.">Seamless live streaming solutions to broadcast your events to global audiences in real time.</p>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="6" y="14" width="16" height="20" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <rect x="26" y="14" width="16" height="20" rx="2" stroke="currentColor" stroke-width="2.5"/>
+              <path d="M22 24h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M10 24h8M30 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="24" cy="24" r="2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 data-en="AI Interpreter" data-ko="AI 통역">AI Interpreter</h3>
+          <p data-en="Real-time AI-powered interpretation breaking language barriers at international conferences." data-ko="국제 회의에서 언어 장벽을 허무는 실시간 AI 통역 서비스입니다.">Real-time AI-powered interpretation breaking language barriers at international conferences.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section id="cta-banner">
+    <div class="cta-inner">
+      <p class="cta-sub" data-en="TRUSTED BY GLOBAL ORGANIZATIONS" data-ko="글로벌 기관이 신뢰하는 파트너">TRUSTED BY GLOBAL ORGANIZATIONS</p>
+      <h2 data-en="We Make Your Event<br>Unforgettable" data-ko="당신의 행사를<br>잊을 수 없게 만듭니다">We Make Your Event<br>Unforgettable</h2>
+      <a href="#contact" class="btn" data-en="Start Planning" data-ko="지금 문의하기">Start Planning</a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container about-inner fade-in">
+      <div class="about-text">
+        <p class="section-tag" data-en="Who We Are" data-ko="회사 소개">Who We Are</p>
+        <h2 data-en="Your Trusted Partner<br>for International Events" data-ko="국제 행사의<br>신뢰할 수 있는 파트너">Your Trusted Partner<br>for International Events</h2>
+        <p class="about-desc" data-en="BM MEDIA is a specialist in international conference solutions, delivering integrated audio-visual, live streaming, and AI interpretation services. We bring together cutting-edge technology and expert execution to ensure every event runs flawlessly — wherever it is in the world." data-ko="BM MEDIA는 국제 회의 솔루션 전문 기업으로, 통합 AV, 라이브 스트리밍, AI 통역 서비스를 제공합니다. 최첨단 기술과 전문적인 운영을 통해 전 세계 어디에서나 모든 행사가 완벽하게 진행될 수 있도록 지원합니다.">BM MEDIA is a specialist in international conference solutions, delivering integrated audio-visual, live streaming, and AI interpretation services. We bring together cutting-edge technology and expert execution to ensure every event runs flawlessly — wherever it is in the world.</p>
+        <a href="#contact" class="btn btn-dark" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
+      </div>
+      <div class="about-visual">
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num" data-target="500" data-suffix="+">0+</span>
+            <span class="stat-label" data-en="Events Delivered" data-ko="행사 진행">Events Delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="30" data-suffix="+">0+</span>
+            <span class="stat-label" data-en="Countries Served" data-ko="서비스 국가">Countries Served</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-target="5" data-suffix="">0</span>
+            <span class="stat-label" data-en="Core Services" data-ko="핵심 서비스">Core Services</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag" data-en="Get in Touch" data-ko="연락하기">Get in Touch</p>
+        <h2 data-en="Contact Us" data-ko="문의하기">Contact Us</h2>
+      </div>
+      <div class="contact-grid fade-in">
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-label" data-en="Email" data-ko="이메일">Email</p>
+            <a href="mailto:b-media@b-media.co.kr">b-media@b-media.co.kr</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.0 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-label" data-en="Phone" data-ko="전화">Phone</p>
+            <a href="tel:+821022501664">+82 10 2250 1664</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-label" data-en="Address" data-ko="주소">Address</p>
+            <p data-en="135, Misagangbyeonhangang-ro,<br>Hanam-si, Gyeonggi-do,<br>Republic of Korea" data-ko="경기도 하남시<br>미사강변한강로 135">135, Misagangbyeonhangang-ro,<br>Hanam-si, Gyeonggi-do,<br>Republic of Korea</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form fade-in" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label data-en="Name" data-ko="이름">Name</label>
+            <input type="text" name="name" placeholder="Your name" data-en="Your name" data-ko="이름을 입력하세요" required />
+          </div>
+          <div class="form-group">
+            <label data-en="Email" data-ko="이메일">Email</label>
+            <input type="email" name="email" placeholder="your@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label data-en="Message" data-ko="메시지">Message</label>
+          <textarea name="message" rows="5" placeholder="Tell us about your event" data-en="Tell us about your event" data-ko="행사에 대해 알려주세요" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark" data-en="Send Message" data-ko="메시지 보내기">Send Message</button>
+        <p class="form-success" id="formSuccess" data-en="Thank you! We'll be in touch soon." data-ko="감사합니다! 곧 연락드리겠습니다.">Thank you! We'll be in touch soon.</p>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container footer-inner">
+      <img src="logo.png" alt="BM MEDIA" style="height:32px;filter:brightness(0) invert(1);" />
+      <p data-en="© 2026 BM MEDIA. All rights reserved." data-ko="© 2026 BM MEDIA. All rights reserved.">© 2026 BM MEDIA. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
