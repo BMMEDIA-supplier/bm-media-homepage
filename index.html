@@ -25,28 +25,31 @@
 
   <!-- HEADER -->
   <header id="header">
-    <div class="container header-inner">
+    <div class="header-inner">
+      <button class="hamburger-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
       <a href="#" class="logo-text-link">BM MEDIA</a>
-      <nav class="nav" id="nav">
+<div class="lang-dropdown" id="langDropdown">
+        <button class="lang-toggle" id="langToggle">Language</button>
+        <ul class="lang-menu" id="langMenu">
+          <li data-lang="en">English</li>
+          <li data-lang="ko">한국어</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU DROPDOWN -->
+  <div class="menu-overlay" id="menuOverlay">
+    <div class="menu-overlay-inner">
+      <nav class="overlay-nav">
         <a href="#services" data-en="Services" data-ko="서비스">Services</a>
         <a href="#about" data-en="About" data-ko="소개">About</a>
         <a href="#contact" data-en="Contact" data-ko="문의">Contact</a>
       </nav>
-      <div class="header-right">
-        <div class="lang-dropdown" id="langDropdown">
-          <button class="lang-toggle" id="langToggle">Language</button>
-          <ul class="lang-menu" id="langMenu">
-            <li data-lang="en">English</li>
-            <li data-lang="ko">한국어</li>
-          </ul>
-        </div>
-        <a href="#contact" class="btn-header-cta" data-en="Contact Us" data-ko="문의하기">Contact Us</a>
-        <button class="menu-btn" id="menuBtn" aria-label="Menu">
-          <span></span><span></span><span></span>
-        </button>
-      </div>
     </div>
-  </header>
+  </div>
 
   <!-- HERO -->
   <section id="hero">
@@ -245,6 +248,10 @@
       </div>
 
       <form class="contact-form fade-in" id="contactForm">
+        <input type="hidden" name="access_key" value="60e1addc-3c67-430f-8cc2-b345cddf52f7" />
+        <input type="hidden" name="subject" value="[BM미디어 홈페이지] 새 고객 문의" />
+        <input type="hidden" name="from_name" value="BM미디어 홈페이지" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form-row">
           <div class="form-group">
             <label data-en="Name" data-ko="이름">Name</label>
@@ -261,6 +268,7 @@
         </div>
         <button type="submit" class="btn btn-dark" data-en="Send Message" data-ko="메시지 보내기">Send Message</button>
         <p class="form-success" id="formSuccess" data-en="Thank you! We'll be in touch soon." data-ko="감사합니다! 곧 연락드리겠습니다.">Thank you! We'll be in touch soon.</p>
+        <p class="form-error" id="formError" data-en="Sorry, your message could not be sent. Please email us directly." data-ko="전송에 실패했습니다. 이메일로 직접 문의해 주세요.">Sorry, your message could not be sent. Please email us directly.</p>
       </form>
 
     </div>

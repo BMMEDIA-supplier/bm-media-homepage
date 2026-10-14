@@ -81,22 +81,27 @@ startAuto();
 // =====================
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
-  header.classList.toggle('scrolled', window.scrollY > 20);
+  header.classList.toggle('scrolled', window.scrollY > 80);
 });
 
 // =====================
-// MOBILE MENU
+// FULLSCREEN MENU
 // =====================
 const menuBtn = document.getElementById('menuBtn');
-const nav = document.getElementById('nav');
+const menuOverlay = document.getElementById('menuOverlay');
 
 menuBtn.addEventListener('click', () => {
-  nav.classList.toggle('open');
+  menuBtn.classList.toggle('open');
+  menuOverlay.classList.toggle('open');
+  document.body.style.overflow = menuOverlay.classList.contains('open') ? 'hidden' : '';
 });
 
-// Close menu on nav link click
-nav.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => nav.classList.remove('open'));
+menuOverlay.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    menuBtn.classList.remove('open');
+    menuOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  });
 });
 
 // =====================
@@ -107,7 +112,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     const target = document.querySelector(this.getAttribute('href'));
     if (!target) return;
     e.preventDefault();
-    const offset = 116;
+    const offset = 64;
     const top = target.getBoundingClientRect().top + window.scrollY - offset;
     window.scrollTo({ top, behavior: 'smooth' });
   });
@@ -165,18 +170,32 @@ if (statsEl) counterObserver.observe(statsEl);
 // =====================
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
-  contactForm.addEventListener('submit', function(e) {
+  contactForm.addEventListener('submit', async function(e) {
     e.preventDefault();
     const success = document.getElementById('formSuccess');
+    const error = document.getElementById('formError');
     const btn = contactForm.querySelector('button[type="submit"]');
     btn.disabled = true;
     btn.textContent = '...';
-    setTimeout(() => {
+    success.classList.remove('show');
+    error.classList.remove('show');
+    try {
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(contactForm)
+      });
+      const data = await res.json();
+      if (!res.ok || !data.success) throw new Error(data.message || 'Submit failed');
       contactForm.reset();
-      btn.disabled = false;
-      btn.textContent = currentLang === 'ko' ? '메시지 보내기' : 'Send Message';
       success.classList.add('show');
       setTimeout(() => success.classList.remove('show'), 4000);
-    }, 800);
+    } catch (err) {
+      console.error(err);
+      error.classList.add('show');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = currentLang === 'ko' ? '메시지 보내기' : 'Send Message';
+    }
   });
 }
